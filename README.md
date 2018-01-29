@@ -78,6 +78,7 @@ Building:
 - dropbear-2017.75
 
 Building dropbear:
+```
   buildroot={whereever_your_buildroot_untar_is}
   export CC=$buildroot/output/host/bin/mips-buildroot-linux-uclibc-cc
   export LDFLAGS=-static
@@ -86,6 +87,7 @@ Building dropbear:
   cp -p dropbear dropbear_static
   scp -oKexAlgorithms=+diffie-hellman-group1-sha1 \
       -c +aes256-cbc -p ./dropbear_static mfi1:/var/run
+```
 
 You can, but I did not, modify things in options.h.  I use the
 commandline later.  You get a bunch of warnings about xauth missing
