@@ -93,7 +93,7 @@ etc that you can turn off by disabling the feature in options.h
 
 # Configuration on the target system
 
-# luckily we can do this:
+## luckily we can do this:
 mkdir /etc/dropbear
 
 # As for host keys:
